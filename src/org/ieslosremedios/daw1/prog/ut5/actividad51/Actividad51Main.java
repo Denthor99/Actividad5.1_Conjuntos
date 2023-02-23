@@ -12,13 +12,12 @@ public class Actividad51Main {
         Persona fer=new Persona("roberto",19);
         Persona paco=new Persona("Francisco",32);
         Persona pablo=new Persona("Pablo",17);
-        TreeSet<Persona> personas=new TreeSet<>();
+        Persona rober=new Persona("Roberto",20);
+        TreeSet<Persona> personas=new TreeSet<>(new CompararPersonas());
         personas.add(paco);
         personas.add(fer);
+        personas.add(rober);
         personas.add(pablo);
-        Iterator<Persona>it=personas.iterator();
-        while (it.hasNext()){
-            System.out.println(it.next());
-        }
+        System.out.println(personas);
     }
 }
