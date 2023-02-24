@@ -39,7 +39,7 @@ public class Persona implements Comparable{
         if(this.edad==otro.edad){
             return 0;
         }
-        if(this.edad>otro.edad){
+        if(this.edad<otro.edad){
             return 1;
         }
         return -1;

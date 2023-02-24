@@ -1,8 +1,8 @@
 package org.ieslosremedios.daw1.prog.ut5.actividad51;
 
-import java.util.Comparator;
+import java.util.*;
 
-public class CompararPersonas implements Comparator<Persona> {
+public class CompararPersonasEdadNombre implements Comparator<Persona> {
     @Override
     public int compare(Persona o1, Persona o2) {
         if(o1.nombre.compareToIgnoreCase(o2.nombre)==0){

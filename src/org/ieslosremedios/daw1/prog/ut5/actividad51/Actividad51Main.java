@@ -1,8 +1,6 @@
 package org.ieslosremedios.daw1.prog.ut5.actividad51;
 
-import java.util.Iterator;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class Actividad51Main {
     public static void main(String[] args) {
@@ -13,7 +11,7 @@ public class Actividad51Main {
         Persona paco=new Persona("Francisco",32);
         Persona pablo=new Persona("Pablo",17);
         Persona rober=new Persona("Roberto",20);
-        TreeSet<Persona> personas=new TreeSet<>(new CompararPersonas());
+        TreeSet<Persona> personas=new TreeSet<>(new CompararPersonasNombreInverso().reversed());
         personas.add(paco);
         personas.add(fer);
         personas.add(rober);
