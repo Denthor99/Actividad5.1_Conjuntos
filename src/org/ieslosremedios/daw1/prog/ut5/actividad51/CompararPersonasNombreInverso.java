@@ -5,7 +5,16 @@ public class CompararPersonasNombreInverso implements Comparator<Persona> {
 
     @Override
     public int compare(Persona o1, Persona o2) {
-        return o1.compareTo(o2);
+        if(o1.nombre.compareToIgnoreCase(o2.nombre)==0){
+            if(o1.edad==o2.edad){
+                return 0;
+            }
+            if(o1.edad<o2.edad){
+                return 1;
+            }
+            return -1;
+        }
+        return o1.nombre.compareToIgnoreCase(o2.nombre);
     }
 
     @Override
